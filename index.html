@@ -1,1 +1,32 @@
-gotcha
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+
+	GOTCHA
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+    <script>
+                    // Add "https://ipinfo.io" statement
+                    // this will communicate with the ipify servers
+                    // in order to retrieve the IP address
+                    $.get("https://ipinfo.io", function(response) {
+                                        alert(response.ip);
+                                    }, "json")
+        // "json" shows that data will be fetched in json format
+    </script>
+
+</body>
+</html>
+
